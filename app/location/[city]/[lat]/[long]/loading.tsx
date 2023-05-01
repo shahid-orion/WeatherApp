@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { SunIcon } from '@heroicons/react/solid'
 
 type Props = {}

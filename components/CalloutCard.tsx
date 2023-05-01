@@ -1,7 +1,5 @@
 'use client'
 
-import React from 'react'
-
 import { CheckCircleIcon, ExclamationCircleIcon } from '@heroicons/react/solid'
 import { Callout } from '@tremor/react'
 
