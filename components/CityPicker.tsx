@@ -99,7 +99,7 @@ const CityPicker = (props: Props) => {
             onChange={handleSelectedCity}
             options={City.getCitiesOfCountry(
               selectedCountry.value.isoCode
-            )?.map((state) => ({
+            )?.map((state: any) => ({
               value: {
                 latitude: state.latitude,
                 longitude: state.longitude,
