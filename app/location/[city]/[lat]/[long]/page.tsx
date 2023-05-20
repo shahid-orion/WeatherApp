@@ -39,8 +39,8 @@ const WeatherPage = async ({ params: { city, lat, long } }: Props) => {
     body: JSON.stringify({ weatherData: dataToSend }),
   })
 
-  const GPTData = await res.json()
-  const { content } = GPTData
+  // const GPTData = await res.json()
+  // const { content } = GPTData
 
   return (
     <div className="flex flex-col min-h-screen md:flex-row">
@@ -58,8 +58,11 @@ const WeatherPage = async ({ params: { city, lat, long } }: Props) => {
           </div>
 
           {/* Callout Card: GPT */}
-          <div className="m-2 mb-10">
+          {/* <div className="m-2 mb-10">
             <CalloutCard message={content} />
+          </div> */}
+          <div className="m-2 mb-10">
+            <CalloutCard message="Apologies, AI weather analysis is unavailable right now" />
           </div>
 
           {/* StatCards */}
